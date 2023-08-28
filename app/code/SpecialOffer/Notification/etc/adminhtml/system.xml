@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="SpecialOffer" translate="label" sortOrder="10">
+            <label>SpecialOffer</label>
+        </tab>
+        <section id="payment_terms" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Special Payment Terms</label>
+            <tab>SpecialOffer</tab>
+            <resource>SpecialOffer_Notification::paymentTerms_config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General Configuration</label>
+                <field id="text_before_time" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Text Before Timer</label>
+                </field>
+                <field id="text_after_time" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Text After Timer</label>
+                </field>
+                 <field id="start_time" translate="label" type="date" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Start Time</label>
+                    <frontend_model>SpecialOffer\Notification\Block\Adminhtml\Offer\StartTime</frontend_model>
+                </field>
+                <field id="end_time" translate="label" type="date" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>End Time</label>
+                    <frontend_model>SpecialOffer\Notification\Block\Adminhtml\Offer\EndTime</frontend_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

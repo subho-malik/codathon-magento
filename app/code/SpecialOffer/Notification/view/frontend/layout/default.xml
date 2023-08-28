@@ -1,0 +1,8 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+  <head>
+        <css src="SpecialOffer_Notification::css/offer_banner.css" rel="stylesheet" type="text/css" />
+  </head>
+    <referenceContainer name="after.body.start">
+    <block class="SpecialOffer\Notification\Block\Offer\Timer" template="SpecialOffer_Notification::offer_banner.phtml" name="offer_banner" as="offer_banner"/>
+</referenceContainer>
+</page>
